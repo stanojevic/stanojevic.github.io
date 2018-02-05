@@ -117,7 +117,17 @@ Papers:
 </div>
 <div id="thesis17_text" style="display:none">
     <blockquote>
-	   to be added
+	  In natural language, there is only a limited space for variation in the word order of linguistic productions.
+From a linguistic perspective, word order is the result of multiple application of syntactic recursive functions. These syntactic operations produce hierarchical syntactic structures, as well as a string of words that appear in a certain order.
+However, different languages are governed by different syntactic rules. Thus, one of the main problems in machine translation is to find the mapping between word order in the source language and word order in the target language. This is often done by a method of syntactic transfer, in which the syntactic tree is recovered from the source sentence, and then transduced so that its form is consistent with the syntactic rules of the target language. <br/>
+In this dissertation, I propose an alternative to syntactic transfer that maintains its good properties---namely the compositional and hierarchical structure---but, unlike syntactic transfer, it is directly derived from data without requiring any linguistic annotation. This approach brings two main advantages. First, it allows for applying hierarchical reordering even on languages for which there are no syntactic parsers available.
+Second, unlike the trees used in syntactic transfer, which in some cases cannot cover the reordering patterns present in the data, the trees used in this work are built directly over the reordering patterns, so they can cover them by definition.<br/>
+I treat reordering as a problem of predicting the permutation of the source words which permutes them into an order that is as close as possible to the target side order.
+This permutation can be recursively decomposed into a hierarchical structure called a permutation tree (PET) (Zhang and Gildea, 2007). In some cases there can be many permutation trees that can generate the same permutation. This set of permutation trees is called permutation forest.
+A permutation forest is a richer representation of a permutation because it covers all possible segmentations consistent with the permutation, so modeling permutations over the whole forest is a more promising approach than modeling a single tree.
+I apply permutation trees in two sub-tasks of machine translation: word order prediction and word order evaluation. In the word order prediction scenario I propose a probabilistic model that treats both the non-terminals and the bracketing of the sentence as latent variables. In the context of MT evaluation, I propose evaluation metrics that incorporate PETs and use machine learning methods to approximate human judgment of translation quality.
+
+Overall, the permutation tree models proposed here are (i) compositional, (ii) hierarchical and (iii) directly derived from unannotated translation data. Empirically, the models satisfying these three properties have been shown to improve translation quality, and provide better correlation with human judgment when used for evaluation of machine translation output.
 </div>
     <li> 
 
