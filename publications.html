@@ -119,15 +119,15 @@ Papers:
 </div>
 <div id="acl19_text" style="display:none">
     <blockquote> 
-	    TO BE ADDED
+Minimalist  Grammars  (Stabler,  1997)  are a computationally  oriented,  and  rigorous  formalisation  of  many  aspects  of  Chomsky’s(1995)   Minimalist   Program. This   paper presents the first ever application of this formalism to the task of realistic wide-coverage parsing.   The  parser  uses  a  linguistically  expressive  yet  highly  constrained  grammar,  together with an adaptation of the A* search algorithm currently used in CCG parsing (Lewis and Steedman, 2014; Lewis et al., 2016), with supertag probabilities provided by a bi-LSTM neural  network  supertagger  trained  on  MG-bank,  a  corpus  of  MG  derivation  trees. We report on some promising initial experimental results for overall dependency recovery as well as on the recovery of certain unbounded long distance dependencies.  Finally, although like other MG parsers, ours has a high order polynomial worst case time complexity, we show that in practice its expected time complexity is O(n^3). The parser is publicly available.
 </div>
     <li> 
-    <!--a href=""--><b>Wide-Coverage Neural A* Parsing for Minimalist Grammars</b><!--/a--> <br/>
+    <a href="./papers/2019_ACL_MG_Wide_Coverage.pdf"><b>Wide-Coverage Neural A* Parsing for Minimalist Grammars</b></a> <br/>
       John Torr, Miloš Stanojević, Mark Steedman and Shay Cohen<br/>
       <CITE> ACL </CITE> 2019.<br/>
         <a   href="javascript:copy(acl19,acl19_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(acl19, acl19_bib)">bib</a>&nbsp;&nbsp;
-    <!--a href=""-->pdf<!--/a-->&nbsp;&nbsp;  
+    <a href="./papers/2019_ACL_MG_Wide_Coverage.pdf">pdf</a>&nbsp;&nbsp;  
     <br>
     <div id="acl19"></div>
      </li><p><p>
@@ -151,7 +151,7 @@ Papers:
 </div>
 <div id="fg19_text" style="display:none">
     <blockquote> 
-	    TO BE ADDED
+Head movement is a syntactic operation used in most generative  syntactic  analyses.  However,  its  computational  properties  have not been extensively studied. Stabler (2001) formalises head movementin the framework of Minimalist Grammars by extending the item representation to allow for easy extraction of the head. This work shows that Stabler’s  representation  is  in  fact  suboptimal  because  it  causes  higher polynomial parsing complexity. A new algorithm is derived for parsing head movement and affix hopping by changing the kinds of representations that the parser deals with. This algorithm has much better asymptotic  worst-case  runtime  of O(n^{2k+5}).  This  result  makes  parsing  head movement  and  affix  hopping  computationally  as  efficient  as  parsing  a single phrase movement.
 </div>
     <li> 
     <a href="http://fg.phil.hhu.de/2019/papers/FG2019-Stanojevic.pdf"><b>On the Computational Complexity of Head Movement and Affix Hopping</b></a> <br/>
@@ -172,13 +172,17 @@ Papers:
 <div id="naacl19_bib" style="display:none">
     <blockquote>
         <pre>
-@InProceedings{NAACL2019:CCG,
-  author = "Milo\v{s} Stanojevi\'{c} and Mark Steedman",
-  title = "{CCG Parsing Algorithm with Incremental Tree Rotation}",
-  booktitle = "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, Volume 1 (Long Papers)",
-  year = "2019",
-  publisher = "Association for Computational Linguistics",
-  location = "Minneapolis, Minnesota"
+@inproceedings{stanojevic-steedman-2019-ccg,
+    title = "{CCG} Parsing Algorithm with Incremental Tree Rotation",
+    author = "Stanojevi{\'c}, Milo{\v{s}}  and
+      Steedman, Mark",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1020",
+    pages = "228--239",
 }
     </pre>
     </blockquote>
@@ -206,12 +210,12 @@ with greater incrementality and accuracy than previous
 proposals.
 </div>
     <li> 
-    <a href="./papers/2019_NAACL_CCG_Incremental_Rotation.pdf"><b>CCG Parsing Algorithm with Incremental Tree Rotation</b></a> <br/>
+    <a href="https://www.aclweb.org/anthology/N19-1020"><b>CCG Parsing Algorithm with Incremental Tree Rotation</b></a> <br/>
       Miloš Stanojević and Mark Steedman<br/>
       <CITE> NAACL </CITE> 2019.<br/>
         <a   href="javascript:copy(naacl19,naacl19_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(naacl19, naacl19_bib)">bib</a>&nbsp;&nbsp;
-    <a href="./papers/2019_NAACL_CCG_Incremental_Rotation.pdf">pdf</a>&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/N19-1020">pdf</a>&nbsp;&nbsp;  
     <a href="https://github.com/stanojevic/Rotating-CCG">code</a>&nbsp;&nbsp;  
     <br>
     <div id="naacl19"></div>
@@ -225,27 +229,33 @@ proposals.
 <div id="cmcl19_bib" style="display:none">
     <blockquote>
         <pre>
-@InProceedings{corner2019,
-    author = "Hunter, Tim and Stanojevi{\'{c}}, Milo{\v{s}} and Stabler, Edward",
-    title = "{The active-filler strategy in a move-eager left-corner Minimalist Grammar parser}",
-    booktitle = "Proceedings of the 9th Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2019)",
+@inproceedings{corner2019,
+    title = "The Active-Filler Strategy in a Move-Eager Left-Corner Minimalist Grammar Parser",
+    author = "Hunter, Tim  and
+      Stanojevi{\'c}, Milo{\v{s}}  and
+      Stabler, Edward",
+    booktitle = "Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics",
+    month = jun,
     year = "2019",
+    address = "Minneapolis, Minnesota",
     publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W19-2901",
+    pages = "1--10",
 }
 	</pre>
     </blockquote>
 </div>
 <div id="cmcl19_text" style="display:none">
     <blockquote>
-TODO Not ready yet. TODO
+Recent psycholinguistic evidence suggests that human parsing of moved elements is `active', and perhaps even `hyper-active': it seems that a leftward-moved object is related to a verbal position rapidly, perhaps even before the transitivity information associated with the verb is available to the listener. This paper presents a formal, sound and complete parser for Minimalist Grammars whose search space contains branching points that we can identify as the locus of the decision to perform this kind of active gap-finding. This brings formal models of parsing into closer contact with recent psycholinguistic theorizing than was previously possible.
 </div>
     <li> 
-    <!--a href=""--><b>The active-filler strategy in a move-eager left-corner Minimalist Grammar parser</b><!--/a--> <br/>
+    <a href="https://www.aclweb.org/anthology/W19-2901"><b>The active-filler strategy in a move-eager left-corner Minimalist Grammar parser</b></a> <br/>
       Tim Hunter, Miloš Stanojević and Edward Stabler<br/>
       <CITE> CMCL </CITE> 2019.<br/>
         <a   href="javascript:copy(cmcl19,cmcl19_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(cmcl19, cmcl19_bib)">bib</a>&nbsp;&nbsp;
-    <!--a href=""-->pdf<!--/a-->&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/W19-2901">pdf</a>&nbsp;&nbsp;  
     <a href="https://github.com/stanojevic/Move-Eager-Left-Corner-MG-Parser">code</a>&nbsp;&nbsp;  
     <br>
     <div id="cmcl19"></div>
