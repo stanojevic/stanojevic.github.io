@@ -100,6 +100,44 @@ Papers:
 2020
 </p>
 
+<!-- ACL20 -->
+
+<ul>
+<div id="acl20_bib" style="display:none">
+    <blockquote>
+        <pre>
+@inproceedings{ACL2020:CCG,
+  title="{Max-Margin Incremental CCG Parsing}",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    author="Milo\v{s} Stanojevi\'{c} and Mark Steedman",
+    year = "2020",
+    publisher = "Association for Computational Linguistics",
+}
+    </pre>
+    </blockquote>
+</div>
+<div id="acl20_text" style="display:none">
+    <blockquote> 
+Incremental syntactic parsing has been an active research area both for cognitive scientists trying to model human sentence processing and for NLP researchers attempting to combine incremental parsing with language modelling for ASR and MT. Most effort has been directed at designing the right transition mechanism, but less has been done to answer the question of what a probabilistic model for those transition parsers should look like.
+
+A very incremental transition mechanism of a recently proposed CCG parser when trained in straightforward locally normalised discriminative fashion produces very bad results on English CCGbank. We identify three biases as the causes of this problem: label bias, exposure bias and imbalanced probabilities bias.
+
+While known techniques for tackling these biases improve results, they still do not make the parser state of the art. Instead, we tackle all of these three biases at the same time using an improved version of beam search optimisation that minimises all beam search violations instead of minimising only the biggest violation. The new incremental parser gives better results than all previously published incremental CCG parsers, and outperforms even some widely used non-incremental CCG parsers.
+</div>
+    <li> 
+    <a href="./papers/2020_ACL_MaxMargin_CCG.pdf"><b>Max-Margin Incremental CCG Parsing</b></a> <br/>
+      Miloš Stanojević and Mark Steedman<br/>
+      <CITE> ACL </CITE> 2020.<br/>
+        <a   href="javascript:copy(acl20,acl20_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(acl20, acl20_bib)">bib</a>&nbsp;&nbsp;
+    <a href="./papers/2020_ACL_MaxMargin_CCG.pdf">pdf</a>&nbsp;&nbsp;  
+    <br>
+    <div id="acl20"></div>
+     </li><p><p>
+ 
+ </ul>	
+
+
 <!-- CUNY20 -->
 
 <ul>
@@ -119,7 +157,7 @@ Papers:
 </div>
 <div id="cuny20_text" style="display:none">
     <blockquote> 
-Human sentence processing is highly incremental at all levels, including semantic interpretations. Right adjuncts (including right conjuncts) are interesting in this context because processing models often make adjunction a non-incremental operation. Sturt and Lombardo (S&L, 2005) have shown that a greater degree of incrementality seems to be needed in processing coordinations. S&L propose using the adjoin operation of Tree-Adjoining Grammar (TAG) to explain this incrementality. Here we argue that the operations of tree rotation and revealing from Stanojević and Steedman (2019) are providing a simpler explanation of the results of S&L within the Combinatory Categorial Grammar (CCG) formalism.
+Human sentence processing is highly incremental at all levels, including semantic interpretations. Right adjuncts (including right conjuncts) are interesting in this context because processing models often make adjunction a non-incremental operation. Sturt and Lombardo (S&amp;L, 2005) have shown that a greater degree of incrementality seems to be needed in processing coordinations. S&amp;L propose using the adjoin operation of Tree-Adjoining Grammar (TAG) to explain this incrementality. Here we argue that the operations of tree rotation and revealing from Stanojević and Steedman (2019) are providing a simpler explanation of the results of S&amp;L within the Combinatory Categorial Grammar (CCG) formalism.
 </div>
     <li> 
     <a href="./papers/2020_CUNY_CCG_Coordination.pdf"><b>Predictive Processing of Coordination in CCG</b></a> <br/>
@@ -147,7 +185,7 @@ Human sentence processing is highly incremental at all levels, including semanti
         <pre>
 @inproceedings{ACL2019:MG,
   title="{Wide-Coverage Neural A* Parsing for Minimalist Grammars}",
-    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     author="John Torr and Milo\v{s} Stanojevi\'{c} and Mark Steedman and Shay Cohen",
     year = "2019",
     address = "Florence, Italy",
@@ -161,12 +199,12 @@ Human sentence processing is highly incremental at all levels, including semanti
 Minimalist  Grammars  (Stabler,  1997)  are a computationally  oriented,  and  rigorous  formalisation  of  many  aspects  of  Chomsky’s(1995)   Minimalist   Program. This   paper presents the first ever application of this formalism to the task of realistic wide-coverage parsing.   The  parser  uses  a  linguistically  expressive  yet  highly  constrained  grammar,  together with an adaptation of the A* search algorithm currently used in CCG parsing (Lewis and Steedman, 2014; Lewis et al., 2016), with supertag probabilities provided by a bi-LSTM neural  network  supertagger  trained  on  MG-bank,  a  corpus  of  MG  derivation  trees. We report on some promising initial experimental results for overall dependency recovery as well as on the recovery of certain unbounded long distance dependencies.  Finally, although like other MG parsers, ours has a high order polynomial worst case time complexity, we show that in practice its expected time complexity is O(n^3). The parser is publicly available.
 </div>
     <li> 
-    <a href="./papers/2019_ACL_MG_Wide_Coverage.pdf"><b>Wide-Coverage Neural A* Parsing for Minimalist Grammars</b></a> <br/>
+    <a href="https://www.aclweb.org/anthology/P19-1238.pdf"><b>Wide-Coverage Neural A* Parsing for Minimalist Grammars</b></a> <br/>
       John Torr, Miloš Stanojević, Mark Steedman and Shay Cohen<br/>
       <CITE> ACL </CITE> 2019.<br/>
         <a   href="javascript:copy(acl19,acl19_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(acl19, acl19_bib)">bib</a>&nbsp;&nbsp;
-    <a href="./papers/2019_ACL_MG_Wide_Coverage.pdf">pdf</a>&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/P19-1238.pdf">pdf</a>&nbsp;&nbsp;  
     <br>
     <div id="acl19"></div>
      </li><p><p>
@@ -249,12 +287,12 @@ with greater incrementality and accuracy than previous
 proposals.
 </div>
     <li> 
-    <a href="https://www.aclweb.org/anthology/N19-1020"><b>CCG Parsing Algorithm with Incremental Tree Rotation</b></a> <br/>
+    <a href="https://www.aclweb.org/anthology/N19-1020.pdf"><b>CCG Parsing Algorithm with Incremental Tree Rotation</b></a> <br/>
       Miloš Stanojević and Mark Steedman<br/>
       <CITE> NAACL </CITE> 2019.<br/>
         <a   href="javascript:copy(naacl19,naacl19_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(naacl19, naacl19_bib)">bib</a>&nbsp;&nbsp;
-    <a href="https://www.aclweb.org/anthology/N19-1020">pdf</a>&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/N19-1020.pdf">pdf</a>&nbsp;&nbsp;  
     <a href="https://github.com/stanojevic/Rotating-CCG">code</a>&nbsp;&nbsp;  
     <br>
     <div id="naacl19"></div>
@@ -289,12 +327,12 @@ proposals.
 Recent psycholinguistic evidence suggests that human parsing of moved elements is `active', and perhaps even `hyper-active': it seems that a leftward-moved object is related to a verbal position rapidly, perhaps even before the transitivity information associated with the verb is available to the listener. This paper presents a formal, sound and complete parser for Minimalist Grammars whose search space contains branching points that we can identify as the locus of the decision to perform this kind of active gap-finding. This brings formal models of parsing into closer contact with recent psycholinguistic theorizing than was previously possible.
 </div>
     <li> 
-    <a href="https://www.aclweb.org/anthology/W19-2901"><b>The active-filler strategy in a move-eager left-corner Minimalist Grammar parser</b></a> <br/>
+    <a href="https://www.aclweb.org/anthology/W19-2901.pdf"><b>The active-filler strategy in a move-eager left-corner Minimalist Grammar parser</b></a> <br/>
       Tim Hunter, Miloš Stanojević and Edward Stabler<br/>
       <CITE> CMCL </CITE> 2019.<br/>
         <a   href="javascript:copy(cmcl19,cmcl19_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(cmcl19, cmcl19_bib)">bib</a>&nbsp;&nbsp;
-    <a href="https://www.aclweb.org/anthology/W19-2901">pdf</a>&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/W19-2901.pdf">pdf</a>&nbsp;&nbsp;  
     <a href="https://github.com/stanojevic/Move-Eager-Left-Corner-MG-Parser">code</a>&nbsp;&nbsp;  
     <br>
     <div id="cmcl19"></div>
@@ -332,12 +370,12 @@ minimalist grammars.  The relation between the parser and the grammar is transpa
 </div>
     <li> 
 
-    <a href="http://www.aclweb.org/anthology/W18-2809"><b>A Sound and Complete Left-Corner Parsing for Minimalist Grammars</b></a> <br/>
+    <a href="http://www.aclweb.org/anthology/W18-2809.pdf"><b>A Sound and Complete Left-Corner Parsing for Minimalist Grammars</b></a> <br/>
       Miloš Stanojević and Edward Stabler<br/>
       <CITE> CogACLL </CITE> 2018.<br/>
         <a   href="javascript:copy(cogacll18,cogacll18_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(cogacll18, cogacll18_bib)">bib</a>&nbsp;&nbsp;
-    <a href="http://www.aclweb.org/anthology/W18-2809">pdf</a>&nbsp;&nbsp;  
+    <a href="http://www.aclweb.org/anthology/W18-2809.pdf">pdf</a>&nbsp;&nbsp;  
     <a href="https://github.com/stanojevic/Left-Corner-MG-parser">code</a>&nbsp;&nbsp;  
     <br>
     <div id="cogacll18"></div>
@@ -452,12 +490,12 @@ Overall, the permutation tree models proposed here are (i) compositional, (ii) h
 </div>
     <li> 
 
-    <a href="https://www.aclweb.org/anthology/D17-1174"><b>Neural Discontinuous Constituency Parsing</b></a> <br/>
+    <a href="https://www.aclweb.org/anthology/D17-1174.pdf"><b>Neural Discontinuous Constituency Parsing</b></a> <br/>
       Miloš Stanojević and Raquel G. Alhama<br/>
       <CITE> EMNLP </CITE> 2017.<br/>
         <a   href="javascript:copy(emnlp17,emnlp17_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(emnlp17, emnlp17_bib)">bib</a>&nbsp;&nbsp;
-    <a href="https://www.aclweb.org/anthology/D17-1174">pdf</a>&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/D17-1174.pdf">pdf</a>&nbsp;&nbsp;  
     <br>
     <div id="emnlp17"></div>
      </li><p><p>
@@ -922,12 +960,12 @@ baselines for English-Japanese.
 
 </div>
     <li> 
-    <a href="http://www.aclweb.org/anthology/D15-1005"> <b> Reordering Grammar Induction </b> </a><br/>
+    <a href="http://www.aclweb.org/anthology/D15-1005.pdf"> <b> Reordering Grammar Induction </b> </a><br/>
       Miloš Stanojević and Khalil Sima'an<br/>
       <CITE> EMNLP </CITE> 2015.<br/>
         <a   href="javascript:copy(emnlp15,emnlp15_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(emnlp15, emnlp15_bib)">bib</a>&nbsp;&nbsp;
-    <a href="http://www.aclweb.org/anthology/D15-1005">pdf</a>&nbsp;&nbsp;  
+    <a href="http://www.aclweb.org/anthology/D15-1005.pdf">pdf</a>&nbsp;&nbsp;  
     <a href="https://vimeo.com/154053492">video</a>&nbsp;&nbsp;  
     <br>
     <div id="emnlp15"></div>
@@ -1185,12 +1223,12 @@ Sentence level evaluation in MT has turned out far more difficult than corpus le
 Automatically evaluating word order of MT system output at the sentence-level is challenging. At the sentence-level, ngram counts are rather sparse which makes it difficult to measure word order quality effectively using lexicalized units. Recent approaches abstract away from lexicalization by assigning a score to the permutation representing how word positions in system output move around relative to a reference translation. Metrics over permutations exist (e.g., Kendal tau or Spearman Rho) and have been shown to be useful in earlier work. However, none of the existing metrics over permutations groups word positions recursively into larger phrase-like blocks, which makes it difficult to account for long-distance reordering phenomena. In this paper we explore novel metrics computed over Permutation Forests (PEFs), packed charts of Permutation Trees (PETs), which are tree decompositions of a permutation into primitive ordering units. We empirically compare PEFs metric against five known reordering metrics on WMT13 data for ten language pairs. The PEFs metric shows better correlation with human ranking than the other metrics almost on all language pairs. None of the other metrics exhibits as stable behavior across language pairs.
 </div>
     <li> 
-    <a href="http://www.aclweb.org/anthology/W14-4017"> <b> Evaluating Word Order Recursively over Permutation-Forests </b> </a><br/>
+    <a href="http://www.aclweb.org/anthology/W14-4017.pdf"> <b> Evaluating Word Order Recursively over Permutation-Forests </b> </a><br/>
       Miloš Stanojević and Khalil Sima'an<br/>
       <CITE> SSST </CITE> 2014.<br/>
         <a   href="javascript:copy(ssst14,ssst14_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(ssst14, ssst14_bib)">bib</a>&nbsp;&nbsp;
-    <a href="http://www.aclweb.org/anthology/W14-4017">pdf</a>&nbsp;&nbsp;  
+    <a href="http://www.aclweb.org/anthology/W14-4017.pdf">pdf</a>&nbsp;&nbsp;  
     <br>
     <div id="ssst14"></div>
      </li><p><p>
@@ -1224,12 +1262,12 @@ Automatically evaluating word order of MT system output at the sentence-level is
 We present the UvA-ILLC submission of the BEER metric to WMT 14 metrics task.  BEER is a sentence level metric that can incorporate a large number of features combined in a linear model. Novel contributions are (1) efficient tuning of a large number of features for maximizing correlation with human system ranking, and (2) novel features that give smoother sentence level scores.  </blockquote>
 </div>
     <li> 
-    <a href="http://www.aclweb.org/anthology/W14-3354"> <b> BEER: BEtter Evaluation as Ranking </b> </a><br/>
+    <a href="http://www.aclweb.org/anthology/W14-3354.pdf"> <b> BEER: BEtter Evaluation as Ranking </b> </a><br/>
       Miloš Stanojević and Khalil Sima'an<br/>
       <CITE> WMT </CITE> 2014.<br/>
         <a   href="javascript:copy(wmt14,wmt14_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(wmt14, wmt14_bib)">bib</a>&nbsp;&nbsp;
-    <a href="http://www.aclweb.org/anthology/W14-3354">pdf</a>&nbsp;&nbsp;  
+    <a href="http://www.aclweb.org/anthology/W14-3354.pdf">pdf</a>&nbsp;&nbsp;  
     <br>
     <div id="wmt14"></div>
      </li><p><p>
