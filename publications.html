@@ -97,6 +97,44 @@ dest.blur();
 Papers:
 
 <p>
+2021
+</p>
+
+<!-- CL21 -->
+
+<ul>
+<div id="cl21_bib" style="display:none">
+    <blockquote>
+        <pre>
+@article{stanojevic:steedman:formal,
+  title={Formal Basis of a Language Universal},
+  author={Stanojevi{\'{c}}, Milo{\v{s}} and Steedman, Mark},
+  journal={Computational Linguistics},
+  year={2021}
+}
+    </pre>
+    </blockquote>
+</div>
+<div id="cl21_text" style="display:none">
+    <blockquote> 
+Steedman (2020) proposes as a formal universal of natural language grammar that grammaticalpermutations of the kind that have given rise to transformational rules are limited to a class known to mathematicians and computer scientists as the “separable” permutations. This class of permutations is exactly the class that can be expressed in combinatory categorial grammars(CCG). The excluded non-separable permutations do in fact seem to be absent in a number of studies of cross-linguistic variation in word-order in nominal and verbal constructions. <br/><br/>
+The number of permutations that are separable grows in the number n of lexical elements in the construction as the Large Schröder Number Sn−1. Since that number grows much more slowly than  the  n!number  of  all  permutations,  this  generalization  is  also  of  considerable  practical interest for computational applications such as parsing and machine translation. <br/><br/>
+The present paper examines the mathematical and computational origins of this restriction,and the reason it is exactly captured in CCG without the imposition of any further constraints.
+</div>
+    <li> 
+    <a href="http://homepages.inf.ed.ac.uk/steedman/papers/ccg/CL_mjs2.pdf"><b>Formal Basis of a Language Universal</b></a> <br/>
+      Miloš Stanojević and Mark Steedman<br/>
+      <CITE> Computational Linguistics Journal </CITE> 2020.<br/>
+        <a   href="javascript:copy(cl21,cl21_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(cl21, cl21_bib)">bib</a>&nbsp;&nbsp;
+    <a href="http://homepages.inf.ed.ac.uk/steedman/papers/ccg/CL_mjs2.pdf">pdf</a>&nbsp;&nbsp;  
+    <br>
+    <div id="cl21"></div>
+     </li><p><p>
+ 
+ </ul>	
+
+<p>
 2020
 </p>
 
@@ -125,14 +163,55 @@ A very incremental transition mechanism of a recently proposed CCG parser when t
 While known techniques for tackling these biases improve results, they still do not make the parser state of the art. Instead, we tackle all of these three biases at the same time using an improved version of beam search optimisation that minimises all beam search violations instead of minimising only the biggest violation. The new incremental parser gives better results than all previously published incremental CCG parsers, and outperforms even some widely used non-incremental CCG parsers.
 </div>
     <li> 
-    <a href="./papers/2020_ACL_MaxMargin_CCG.pdf"><b>Max-Margin Incremental CCG Parsing</b></a> <br/>
+    <a href="https://www.aclweb.org/anthology/2020.acl-main.378.pdf"><b>Max-Margin Incremental CCG Parsing</b></a> <br/>
       Miloš Stanojević and Mark Steedman<br/>
       <CITE> ACL </CITE> 2020.<br/>
         <a   href="javascript:copy(acl20,acl20_text)">abstract</a>&nbsp;&nbsp;
     <a  href="javascript:copy(acl20, acl20_bib)">bib</a>&nbsp;&nbsp;
-    <a href="./papers/2020_ACL_MaxMargin_CCG.pdf">pdf</a>&nbsp;&nbsp;  
+    <a href="https://www.aclweb.org/anthology/2020.acl-main.378.pdf">pdf</a>&nbsp;&nbsp;  
+    <a href="https://slideslive.com/38928795/maxmargin-incremental-ccg-parsing">video</a>&nbsp;&nbsp;  
     <br>
     <div id="acl20"></div>
+     </li><p><p>
+ 
+ </ul>	
+
+<!-- IWPT20 -->
+
+<ul>
+<div id="iwpt20_bib" style="display:none">
+    <blockquote>
+        <pre>
+@inproceedings{stanojevic-steedman-2020-max,
+    title = "Max-Margin Incremental {CCG} Parsing",
+    author = "Stanojevi{\'c}, Milo{\v{s}}  and
+      Steedman, Mark",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.378",
+    doi = "10.18653/v1/2020.acl-main.378",
+    pages = "4111--4122",
+}
+    </pre>
+    </blockquote>
+</div>
+<div id="iwpt20_text" style="display:none">
+    <blockquote> 
+    The earliest models for discontinuous constituency parsers used mildly context-sensitive grammars, but the fashion has changed in recent years to grammar-less transition-based parsers that use strong neural probabilistic models to greedily predict transitions. We argue that grammar-based approaches still have something to contribute on top of what is offered by transition-based parsers. Concretely, by using a grammar formalism to restrict the space of possible trees we can use dynamic programming parsing algorithms for exact search for the most probable tree. Previous chart-based parsers for discontinuous formalisms used probabilistically weak generative models. We instead use a span-based discriminative neural model that preserves the dynamic programming properties of the chart parsers. Our parser does not use an explicit grammar, but it does use explicit grammar formalism constraints: we generate only trees that are within the LCFRS-2 formalism. These properties allow us to construct a new parsing algorithm that runs in lower worst-case time complexity of O(l n{\^{}}4 +n{\^{}}6), where $n$ is the sentence length and $l$ is the number of unique non-terminal labels. This parser is efficient in practice, provides best results among chart-based parsers, and is competitive with the best transition based parsers. We also show that the main bottleneck for further improvement in performance is in the restriction of fan-out to degree 2. We show that well-nestedness is helpful in speeding up parsing, but lowers accuracy.
+</div>
+    <li> 
+    <a href="https://www.aclweb.org/anthology/2020.iwpt-1.12.pdf"><b>Span-Based LCFRS-2 Parsing</b></a> <br/>
+      Miloš Stanojević and Mark Steedman<br/>
+      <CITE> IWPT </CITE> 2020.<br/>
+        <a   href="javascript:copy(iwpt20,iwpt20_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(iwpt20, iwpt20_bib)">bib</a>&nbsp;&nbsp;
+    <a href="https://www.aclweb.org/anthology/2020.iwpt-1.12.pdf">pdf</a>&nbsp;&nbsp;  
+    <a href="https://slideslive.com/38929679/spanbased-lcfrs2-parsing">video</a>&nbsp;&nbsp;  
+    <br>
+    <div id="iwpt20"></div>
      </li><p><p>
  
  </ul>	
