@@ -215,12 +215,19 @@ The present paper examines the mathematical and computational origins of this re
 <div id="acl20_bib" style="display:none">
     <blockquote>
         <pre>
-@inproceedings{ACL2020:CCG,
-  title="{Max-Margin Incremental CCG Parsing}",
-  booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-  author="Milo\v{s} Stanojevi\'{c} and Mark Steedman",
-  year = "2020",
-  publisher = "Association for Computational Linguistics",
+@inproceedings{stanojevic-steedman-2020-max,
+    title = "Max-Margin Incremental {CCG} Parsing",
+    author = "Stanojevi{\'c}, Milo{\v{s}}  and
+      Steedman, Mark",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.378",
+    doi = "10.18653/v1/2020.acl-main.378",
+    pages = "4111--4122",
+    abstract = "Incremental syntactic parsing has been an active research area both for cognitive scientists trying to model human sentence processing and for NLP researchers attempting to combine incremental parsing with language modelling for ASR and MT. Most effort has been directed at designing the right transition mechanism, but less has been done to answer the question of what a probabilistic model for those transition parsers should look like. A very incremental transition mechanism of a recently proposed CCG parser when trained in straightforward locally normalised discriminative fashion produces very bad results on English CCGbank. We identify three biases as the causes of this problem: label bias, exposure bias and imbalanced probabilities bias. While known techniques for tackling these biases improve results, they still do not make the parser state of the art. Instead, we tackle all of these three biases at the same time using an improved version of beam search optimisation that minimises all beam search violations instead of minimising only the biggest violation. The new incremental parser gives better results than all previously published incremental CCG parsers, and outperforms even some widely used non-incremental CCG parsers.",
 }
     </pre>
     </blockquote>
@@ -253,18 +260,19 @@ While known techniques for tackling these biases improve results, they still do 
 <div id="iwpt20_bib" style="display:none">
     <blockquote>
         <pre>
-@inproceedings{stanojevic-steedman-2020-max,
-    title = "Max-Margin Incremental {CCG} Parsing",
+@inproceedings{stanojevic-steedman-2020-span,
+    title = "Span-Based {LCFRS}-2 Parsing",
     author = "Stanojevi{\'c}, Milo{\v{s}}  and
       Steedman, Mark",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    booktitle = "Proceedings of the 16th International Conference on Parsing Technologies and the IWPT 2020 Shared Task on Parsing into Enhanced Universal Dependencies",
     month = jul,
     year = "2020",
     address = "Online",
     publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2020.acl-main.378",
-    doi = "10.18653/v1/2020.acl-main.378",
-    pages = "4111--4122",
+    url = "https://www.aclweb.org/anthology/2020.iwpt-1.12",
+    doi = "10.18653/v1/2020.iwpt-1.12",
+    pages = "111--121",
+    abstract = "The earliest models for discontinuous constituency parsers used mildly context-sensitive grammars, but the fashion has changed in recent years to grammar-less transition-based parsers that use strong neural probabilistic models to greedily predict transitions. We argue that grammar-based approaches still have something to contribute on top of what is offered by transition-based parsers. Concretely, by using a grammar formalism to restrict the space of possible trees we can use dynamic programming parsing algorithms for exact search for the most probable tree. Previous chart-based parsers for discontinuous formalisms used probabilistically weak generative models. We instead use a span-based discriminative neural model that preserves the dynamic programming properties of the chart parsers. Our parser does not use an explicit grammar, but it does use explicit grammar formalism constraints: we generate only trees that are within the LCFRS-2 formalism. These properties allow us to construct a new parsing algorithm that runs in lower worst-case time complexity of O(l n{\^{}}4 +n{\^{}}6), where $n$ is the sentence length and $l$ is the number of unique non-terminal labels. This parser is efficient in practice, provides best results among chart-based parsers, and is competitive with the best transition based parsers. We also show that the main bottleneck for further improvement in performance is in the restriction of fan-out to degree 2. We show that well-nestedness is helpful in speeding up parsing, but lowers accuracy.",
 }
     </pre>
     </blockquote>
@@ -301,6 +309,7 @@ While known techniques for tackling these biases improve results, they still do 
     year = "2020",
     address = "Amherst, Massachusetts",
     organization = "University of Massachusetts",
+    url = "https://osf.io/2xjgn"
 }
     </pre>
     </blockquote>
@@ -333,13 +342,21 @@ Human sentence processing is highly incremental at all levels, including semanti
 <div id="acl19_bib" style="display:none">
     <blockquote>
         <pre>
-@inproceedings{ACL2019:MG,
-  title="{Wide-Coverage Neural A* Parsing for Minimalist Grammars}",
-    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    author="John Torr and Milo\v{s} Stanojevi\'{c} and Mark Steedman and Shay Cohen",
+@inproceedings{torr-etal-2019-wide,
+    title = "Wide-Coverage Neural {A}* Parsing for {M}inimalist {G}rammars",
+    author = "Torr, John  and
+      Stanojevic, Milos  and
+      Steedman, Mark  and
+      Cohen, Shay B.",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
     year = "2019",
     address = "Florence, Italy",
     publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1238",
+    doi = "10.18653/v1/P19-1238",
+    pages = "2486--2505",
+    abstract = "Minimalist Grammars (Stabler, 1997) are a computationally oriented, and rigorous formalisation of many aspects of Chomsky{'}s (1995) Minimalist Program. This paper presents the first ever application of this formalism to the task of realistic wide-coverage parsing. The parser uses a linguistically expressive yet highly constrained grammar, together with an adaptation of the A* search algorithm currently used in CCG parsing (Lewis and Steedman, 2014; Lewis et al., 2016), with supertag probabilities provided by a bi-LSTM neural network supertagger trained on MGbank, a corpus of MG derivation trees. We report on some promising initial experimental results for overall dependency recovery as well as on the recovery of certain unbounded long distance dependencies. Finally, although like other MG parsers, ours has a high order polynomial worst case time complexity, we show that in practice its expected time complexity is cubic in the length of the sentence. The parser is publicly available.",
 }
     </pre>
     </blockquote>
@@ -367,11 +384,17 @@ Minimalist  Grammars  (Stabler,  1997)  are a computationally  oriented,  and  r
     <blockquote>
         <pre>
 @inproceedings{FG2019:MG,
-  title="{On the Computational Complexity of Head Movement and Affix Hopping}",
-  author="Milo\v{s} Stanojevi\'{c}",
-  booktitle="{Formal Grammar 2019}",
-  year={2019},
+  author="Stanojevi{\'{c}}, Milo{\v{s}}",
+  editor="Bernardi, Raffaella
+  and Kobele, Greg
+  and Pogodalla, Sylvain",
+  title="On the Computational Complexity of Head Movement and Affix Hopping",
+  booktitle="Formal Grammar",
+  year="2019",
   publisher="Springer Berlin Heidelberg",
+  address="Berlin, Heidelberg",
+  pages="101--116",
+  isbn="978-3-662-59648-7"
 }
     </pre>
     </blockquote>
