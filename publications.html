@@ -102,10 +102,46 @@ Papers:
 </p>
 
 
-<!-- arXiv22 -->
+<!-- DepSampling arXiv22 -->
 
 <ul>
-<div id="arXiv22_bib" style="display:none">
+<div id="DepSampling_arXiv22_bib" style="display:none">
+    <blockquote>
+        <pre>
+@misc{stanojevic2022unbiased,
+      title={Unbiased and Efficient Sampling of Dependency Trees}, 
+      author={Milo\v{s} Stanojevi\'{c}},
+      year={2022},
+      eprint={2205.12621},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+    </pre>
+    </blockquote>
+</div>
+<div id="DepSampling_arXiv22_text" style="display:none">
+    <blockquote> 
+Distributions over spanning trees are the most common way of computational modeling of dependency syntax. However, most treebanks require that every valid dependency tree has a single edge coming out of the ROOT node, a constraint that is not part of the definition of spanning trees. For this reason all standard inference algorithms for spanning trees are sub-optimal for modeling dependency trees.
+
+Zmigrod et al. (2021b) have recently proposed algorithms for sampling with and without replacement from the single-root dependency tree distribution. In this paper we show that their fastest algorithm for sampling with replacement, Wilson-RC, is in fact producing biased samples and we provide two alternatives that are unbiased. Additionally, we propose two algorithms (one incremental, one parallel) that reduce the asymptotic runtime of their algorithm for sampling k trees without replacement to (kn3). These algorithms are both asymptotically and practically more efficient. 
+</div>
+    <li> 
+    <a href="https://arxiv.org/pdf/2205.12621.pdf"><b>Unbiased and Efficient Sampling of Dependency Trees</b></a> <br/>
+      Miloš Stanojević<br/>
+      <CITE> arXiv </CITE> 2022.<br/>
+        <a   href="javascript:copy(DepSampling_arXiv22,DepSampling_arXiv22_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(DepSampling_arXiv22, DepSampling_arXiv22_bib)">bib</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/pdf/2205.12621.pdf">pdf</a>&nbsp;&nbsp;  
+    <br>
+    <div id="DepSampling_arXiv22"></div>
+     </li><p><p>
+ 
+ </ul>	
+
+<!-- TG arXiv22 -->
+
+<ul>
+<div id="TG_arXiv22_bib" style="display:none">
     <blockquote>
         <pre>
 @misc{sartran2022transformer,
@@ -119,7 +155,7 @@ Papers:
     </pre>
     </blockquote>
 </div>
-<div id="arXiv22_text" style="display:none">
+<div id="TG_arXiv22_text" style="display:none">
     <blockquote> 
 Transformer language models that are trained on vast amounts of data have achieved remarkable success at various NLP benchmarks. Intriguingly, this success is achieved by models that lack an explicit modeling of hierarchical syntactic structures, which were hypothesized by decades of linguistic research to be necessary for good generalization. This naturally leaves a question: to what extent can we further improve the performance of Transformer language models, through an inductive bias that encourages the model to explain the data through the lens of recursive syntactic compositions? Although the benefits of modeling recursive syntax have been shown at the small data and model scales, it remains an open question whether—and to what extent—a similar design principle is still beneficial in the case of powerful Transformer language models that work well at scale. To answer these questions, we introduce Transformer Grammars—a novel class of Transformer language models that combine: (i) the expressive power, scalability, and strong performance of Transformers, and (ii) recursive syntactic compositions, which here are implemented through a special attention mask. We find that Transformer Grammars outperform various strong baselines on multiple syntax-sensitive language modeling evaluation metrics, in addition to sentence-level language modeling perplexity. Nevertheless, we find that the recursive syntactic composition bottleneck harms perplexity on document-level modeling, providing evidence that a different kind of memory mechanism—that works independently of syntactic structures—plays an important role in the processing of long-form text. We describe two approaches to single-root dependency parsing that yield significant speed ups in such parsing. One approach has been previously used in dependency parsers in practice, but remains undocumented in the parsing literature, and is considered a heuristic. We show that this approach actually finds the optimal dependency tree. The second approach relies on simple reweighting of the inference graph being input to the dependency parser and has an optimal running time. Here, we again show that this approach is fully correct and identifies the highest-scoring parse tree. Our experiments demonstrate a manyfold speed up compared to a previous graph-based state-of-the-art parser without any loss in accuracy or optimality.
 </div>
@@ -127,11 +163,11 @@ Transformer language models that are trained on vast amounts of data have achiev
     <a href="https://arxiv.org/pdf/2203.00633.pdf"><b>Transformer Grammars: Augmenting Transformer Language Models with Syntactic Inductive Biases at Scale</b></a> <br/>
       Laurent Sartran, Samuel Barrett, Adhiguna Kuncoro, Miloš Stanojević, Phil Blunsom, Chris Dyer<br/>
       <CITE> arXiv </CITE> 2022.<br/>
-        <a   href="javascript:copy(arXiv22,arXiv22_text)">abstract</a>&nbsp;&nbsp;
-    <a  href="javascript:copy(arXiv22, arXiv22_bib)">bib</a>&nbsp;&nbsp;
+        <a   href="javascript:copy(TG_arXiv22,TG_arXiv22_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(TG_arXiv22, TG_arXiv22_bib)">bib</a>&nbsp;&nbsp;
     <a href="https://arxiv.org/pdf/2203.00633.pdf">pdf</a>&nbsp;&nbsp;  
     <br>
-    <div id="arXiv22"></div>
+    <div id="TG_arXiv22"></div>
      </li><p><p>
  
  </ul>	
