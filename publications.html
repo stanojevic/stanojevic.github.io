@@ -98,41 +98,88 @@ dest.blur();
 Papers:
 
 <p>
-2023
+2024
 </p>
 
 
-<!-- SynJax SynJaxArXiv23 -->
+<!-- Multipath arXiv24 -->
 
 <ul>
-<div id="SynJaxArXiv23_bib" style="display:none">
+<div id="MultipathArXiv24_bib" style="display:none">
     <blockquote>
         <pre>
-@article{synjax2023,
-      title="{SynJax: Structured Probability Distributions for JAX}",
-      author={Milo\v{s} Stanojevi\'{c} and Laurent Sartran},
-      year={2023},
-      journal={arXiv preprint arXiv:2308.03291},
-      url={https://arxiv.org/abs/2308.03291},
+@article{multipath2024,
+      title={Multipath parsing in the brain}, 
+      author={Berta Franzluebbers and Donald Dunagan and Milo\v{s} Stanojevi\'{c} and Jan Buys and John T. Hale},
+      year={2024},
+      eprint={2401.18046},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/pdf/2401.18046.pdf},
+      primaryClass={cs.CL}
 }
     </pre>
     </blockquote>
 </div>
-<div id="SynJaxArXiv23_text" style="display:none">
+<div id="MultipathArXiv24_text" style="display:none">
     <blockquote> 
-    The development of deep learning software libraries enabled significant progress in the field by allowing users to focus on modeling, while letting the library to take care of the tedious and time-consuming task of optimizing execution for modern hardware accelerators. However, this has benefited only particular types of deep learning models, such as Transformers, whose primitives map easily to the vectorized computation. The models that explicitly account for structured objects, such as trees and segmentations, did not benefit equally because they require custom algorithms that are difficult to implement in a vectorized form.
-SynJax directly addresses this problem by providing an efficient vectorized implementation of inference algorithms for structured distributions covering alignment, tagging, segmentation, constituency trees and spanning trees. With SynJax we can build large-scale differentiable models that explicitly model structure in the data. The code is available at <a href="https://github.com/deepmind/synjax">https://github.com/deepmind/synjax</a>.
+Humans understand sentences word-by-word, in the order that they hear them. This incrementality entails resolving temporary ambiguities about syntactic relationships. We investigate how humans process these syntactic ambiguities by correlating predictions from incremental generative dependency parsers with timecourse data from people undergoing functional neuroimaging while listening to an audiobook. In particular, we compare competing hypotheses regarding the number of developing syntactic analyses in play during word-by-word comprehension: one vs more than one. This comparison involves evaluating syntactic surprisal from a state-of-the-art dependency parser with LLM-adapted encodings against an existing fMRI dataset. In both English and Chinese data, we find evidence for multipath parsing. Brain regions associated with this multipath effect include bilateral superior temporal gyrus.
 </div>
     <li> 
-    <a href="https://arxiv.org/abs/2308.03291"><b>SynJax: Structured Probability Distributions for JAX</b></a> <br/>
+    <a href="https://arxiv.org/pdf/2401.18046.pdf"><b>Multipath parsing in the brain</b></a> <br/>
+      Berta Franzluebbers, Donald Dunagan, Miloš Stanojević, Jan Buys, John Hale<br/>
+      <CITE> arXiv </CITE> 2024. <br/>
+        <a   href="javascript:copy(MultipathArXiv24,MultipathArXiv24_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(MultipathArXiv24, MultipathArXiv24_bib)">bib</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/pdf/2401.18046.pdf">preprint</a>&nbsp;&nbsp;  
+    <br>
+    <div id="MultipathArXiv24"></div>
+     </li><p><p>
+ 
+ </ul>	
+
+<p>
+2023
+</p>
+
+
+<!-- SynJax SynJaxEMNLP23 -->
+
+<ul>
+<div id="SynJaxEMNLP23_bib" style="display:none">
+    <blockquote>
+        <pre>
+@inproceedings{synjax2023,
+    title = "{S}yn{J}ax: Structured Probability Distributions for {JAX}",
+    author = "Stanojevi{\'c}, Milo{\v{s}}  and
+      Sartran, Laurent",
+    editor = "Feng, Yansong  and
+      Lefever, Els",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-demo.32",
+    doi = "10.18653/v1/2023.emnlp-demo.32",
+    pages = "353--364",
+}
+    </pre>
+    </blockquote>
+</div>
+<div id="SynJaxEMNLP23_text" style="display:none">
+    <blockquote> 
+The development of deep learning software libraries enabled significant progress in the field by allowing users to focus on modeling, while letting the library to take care of the tedious and time-consuming task of optimizing execution for modern hardware accelerators. However, this has benefited only particular types of deep learning models, such as Transformers, whose primitives map easily to the vectorized computation. The models that explicitly account for structured objects, such as trees and segmentations, did not benefit equally because they require custom algorithms that are difficult to implement in a vectorized form. SynJax directly addresses this problem by providing an efficient vectorized implementation of inference algorithms for structured distributions covering alignment, tagging, segmentation, constituency trees and spanning trees. This is done by exploiting the connection between algorithms for automatic differentiation and probabilistic inference. With SynJax we can build large-scale differentiable models that explicitly model structure in the data. The code is available at <a href="https://github.com/google-deepmind/synjax">https://github.com/google-deepmind/synjax</a>.
+</div>
+    <li> 
+    <a href="https://aclanthology.org/2023.emnlp-demo.32.pdf"><b>SynJax: Structured Probability Distributions for JAX</b></a> <br/>
       Miloš Stanojević and Laurent Sartran<br/>
       <CITE> EMNLP System Demonstrations </CITE> 2023. <br/>
-        <a   href="javascript:copy(SynJaxArXiv23,SynJaxArXiv23_text)">abstract</a>&nbsp;&nbsp;
-    <a  href="javascript:copy(SynJaxArXiv23, SynJaxArXiv23_bib)">bib</a>&nbsp;&nbsp;
-    <a href="https://arxiv.org/pdf/2308.03291.pdf">preprint</a>&nbsp;&nbsp;  
-    <a href="https://github.com/deepmind/synjax">code</a>&nbsp;&nbsp;  
+        <a   href="javascript:copy(SynJaxEMNLP23,SynJaxEMNLP23_text)">abstract</a>&nbsp;&nbsp;
+    <a  href="javascript:copy(SynJaxEMNLP23, SynJaxEMNLP23_bib)">bib</a>&nbsp;&nbsp;
+    <a href="https://aclanthology.org/2023.emnlp-demo.32.pdf">pdf</a>&nbsp;&nbsp;  
+    <a href="https://github.com/google-deepmind/synjax">code</a>&nbsp;&nbsp;  
     <br>
-    <div id="SynJaxArXiv23"></div>
+    <div id="SynJaxEMNLP23"></div>
      </li><p><p>
  
  </ul>	
